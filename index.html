@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Urbanist', 'sans-serif'],
+                    }
+
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Honk&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#F9F8F4]">
+    <main class="main w-full h-screen ">
+        <div class="container relative h-screen mx-auto">
+
+            <nav class="navbar w-full h-25   flex justify-between items-center px-3 py-4 font-['Honk'] ">
+
+                <div class="w-full md:flex items-center gap-2 ">
+                    <div class="image w-16 h-16 bg-pink-700 rounded-full overflow-hidden">
+                        <img class=" object-cover object-top" src="./Screenshot_2024-01-30_at_11.40.53_AM-removebg-preview.png" alt="">
+                    </div>
+                    <a href="#" class="text-3xl font-bold">J.DESIGNS</a>
+                </div>
+
+                <menu class="links hidden md:flex justify-between items-center gap-8   ">
+                    <a href="#" class="text-xl hover:underline">HOME</a>
+                    <a href="#" class="text-xl hover:underline">ABOUT</a>
+                    <a href="#" class="text-xl hover:underline">SERVICES</a>
+                    <a href="#" class="text-xl hover:underline">CONTACT</a>
+                </menu>
+                <i class="ri-menu-3-line md:hidden text-3xl"></i>
+            </nav>
+            <div class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full flex flex-col items-center justify-between px-5 ">
+                <div class="image w-40 h-40 bg-pink-700 rounded-full ">
+                    <img src="./Screenshot_2024-01-30_at_11.40.53_AM-removebg-preview.png" alt="">
+                </div>
+                <h1 class="text-2xl mt-[2em] font-bold font-[Urbanist]" >Hi, I'm Jayanta!<span class="text-4xl ml-3">👋🏽</span></h1>
+                <p class="text-4xl  sm:text-6xl lg:w-3/4 font-bold mt-4 text-center leading-">Transforming ideas into interactive realities on the web.</p>
+                <p class="text-lg mt-[2em] text-center text-neutral-600 font-[Urbanist]"> I'm a web enthusiast, turning dreams into digital brilliance. Let's create web wonders together!</p>
+                <div class="w-full mt-10 flex justify-center items-center gap-8">
+                    <a href="mailto:jayantadeb76nath@gmail.com" class="text-2xl font-bold bg-zinc-900 rounded-lg text-white px-8 py-3 cursor-pointer">Email</a>
+                    <a href="tel:+919862257437" class="text-2xl font-bold bg-white rounded-lg  text-black px-8 py-3 cursor-pointer">Call</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
